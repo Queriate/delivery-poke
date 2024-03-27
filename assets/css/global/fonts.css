@@ -1,0 +1,13 @@
+    /* Importa a fonte */
+@font-face {
+    font-family: 'font-simples';
+    src: url('../../files/fonts/dm-sans/DMSans-VariableFont_opsz\,wght.ttf');
+}
+
+    /* Importa a fonte */
+    @font-face {
+        font-family: 'font-tema';
+        src: url('../../files/fonts/yuji-boku/YujiBoku-Regular.ttf');
+    }
+    
+    
