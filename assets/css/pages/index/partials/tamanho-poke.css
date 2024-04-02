@@ -1,0 +1,91 @@
+.tamanho-do-poke {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  align-items: center;
+  gap: 10.8rem;
+}
+
+.bowl {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  width: 25.2rem;
+  height: 47.9rem;
+
+  margin: 4rem 0 4rem 0;
+  border-radius: 9rem;
+}
+
+.menor {
+  background: var(--primary-2);
+
+  position: relative;
+}
+
+.menor #menor{
+  transition: ease-in-out .3s;
+}
+
+.menor #menor:hover {
+  transform: scale(110%);
+}
+
+.carpa-menor {
+  position: absolute;
+
+  top: 0;
+  left: 0;
+
+  transform: translateX(-21%) translateY(-10%);
+}
+
+.segunda-carpa-menor {
+  position: absolute;
+
+  bottom: 0;
+  right: 0;
+
+  transform: translateX(30%) translateY(15.5%) rotate(29deg);
+
+}
+
+#maior {
+  z-index: 1;
+}
+
+.maior #maior{
+  transition: ease-in-out .3s;
+}
+
+.maior #maior:hover {
+  transform: scale(110%);
+}
+
+.maior {
+  background: var(--primary-3);
+
+  position: relative;
+}
+
+.carpa-maior {
+  position: absolute;
+
+  top: 0;
+  left: 0;
+
+  transform: translateX(-21%) translateY(-10%);
+}
+
+.segunda-carpa-maior {
+  position: absolute;
+
+  bottom: 0;
+  right: 0;
+
+  transform: translateX(30%) translateY(15.5%) rotate(29deg);
+
+}
