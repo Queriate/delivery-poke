@@ -1,0 +1,31 @@
+.finalizar-pedido {
+  width: 100%;
+  height: 100dvh;
+
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+
+  gap: 1rem;
+}
+
+.finalizar-pedido {
+  background: url(../../../../files/imgs/finalizar-ou-continuar/carpas.svg) no-repeat var(--primary-2);
+  background-size: cover;
+}
+
+.finalizar-pedido button, a{
+
+  background: var(--primary-1);
+  color: var(--primary-3);
+
+  width: 30rem;
+  height: 4rem;
+
+  
+  border-radius: .1rem 4rem;
+
+  font-size: clamp(1.5rem, 2rem, 2.5rem);
+  font-weight: 600;
+}
