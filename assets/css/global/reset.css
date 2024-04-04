@@ -7,3 +7,15 @@
 
     font-family: 'font-simples';
 }
+
+a {
+    text-decoration: none;
+}
+
+
+button {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    z-index: 1;
+}
