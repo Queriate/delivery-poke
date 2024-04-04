@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="assets/css/pages/index/index.css">
+  <title>faça seu pedido</title>
+</head>
+
+<body>
+
+  <main class="conteiner">
+
+    <section class="resumo">
+      <div class="card-pedido">
+
+        <h1>resumo do pedido</h1>
+
+        <div class="resumo-pedido">
+          <div class="box-imag">
+            <img src="assets/files/imgs/resumo-pedido/img-poke.svg" alt="imagem do poke">
+          </div>
+
+          <div class="info-pedido">
+            <span class="span-tamanho">tamanho do poke</span>
+            <span class="span-ingrediente">ingredientes do poke</span>
+            <span class="span-valor">valor do poke</span>
+
+          </div>
+        </div>
+
+        <span class="linha"></span>
+
+        <div class="total">
+          <p>sub-total:</p>
+          <span class="sub-total">valor do poke em R$</span>
+
+          <p>entrega:</p>
+          <span class="entrega">R$ 5,00</span>
+
+          <p class="valor-final">total</p>
+          <span class="valor-final">valor total</span>
+        </div>
+      </div>
+
+      <form class="form-entrega" action="#">
+
+        <h2>para finalizar:</h2>
+        <div class="box-input">
+        <label for="nome">seu nome:</label>
+        <input type="text" id="nome" required>
+      </div>
+
+        <div class="box-input">
+        <label for="telefone">telefone:</label>
+        <input type="tel" id="telefone" required>
+      </div>
+
+        <div class="box-input">
+          <label for="endereco">endereço para entrega:</label>
+          <input type="text" id="endereco" required>
+        </div>
+
+        <div class="input-radio">
+          
+          <input class="radio" type="radio" name="pagamento" id="pix" required>
+          <label for="pix">pix</label>
+
+          <input class="radio" type="radio" name="pagamento" id="debito" required>
+          <label for="debito">débito</label>
+
+          <input class="radio" type="radio" name="pagamento" id="credto" required>
+          <label for="credito">crédito</label>
+        </div>
+
+        <button type="submit"> <i class="fa-solid fa-check"></i> </button>
+      </form>
+    </section>
+  </main>
+</body>
+
+</html>
