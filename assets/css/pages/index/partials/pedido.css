@@ -20,24 +20,6 @@
   color: var(--primary-3);
 }
 
-.continuar-pedido {
-  background: var(--primary-3);
-  color: var(--primary-1);
-
-  padding: 10% 60%;
-  border-radius: .1rem 4rem;
-  border: 0;
-
-  font-size: clamp(1.5rem, 2rem, 2.5rem);
-  font-weight: 600;
-}
-
-.btn-button {
-  justify-content: center;
-  align-items: center;
-  display: flex;
-}
-
 .valor-poke-menor {
   font-size: clamp(2rem, 2.5rem, 3rem);
   font-family: 'font-tema';
@@ -60,7 +42,6 @@
 .valor-poke-maior {
   font-size: clamp(2rem, 2.5rem, 3rem);
   font-family: 'font-tema';
-
   background-color: var(--primary-1);
   color: var(--primary-3);
 
@@ -74,4 +55,16 @@
   right: 0;
 
   transform: translateX(25%) translateY(120%)
+}
+
+.continuar-pedido {
+  background: var(--primary-3);
+  color: var(--primary-4);
+
+  padding: .5% 2%;
+
+  border-radius: .1rem 4rem;
+
+  font-size: clamp(1.5rem, 2rem, 2.5rem);
+  font-weight: 600;
 }
