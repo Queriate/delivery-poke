@@ -53,10 +53,6 @@
 
 }
 
-#maior {
-  z-index: 1;
-}
-
 .maior #maior{
   transition: ease-in-out .3s;
 }
