@@ -32,6 +32,8 @@
 
 .menor #menor:hover {
   transform: scale(110%);
+
+  filter: brightness(110%);
 }
 
 .carpa-menor {
@@ -59,6 +61,8 @@
 
 .maior #maior:hover {
   transform: scale(110%);
+
+  filter: brightness(110%);
 }
 
 .maior {
