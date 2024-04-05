@@ -2,87 +2,161 @@
 <html lang="pt-br">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Metadados da página -->
+  <meta charset="UTF-8"> <!-- Configuração da codificação de caracteres -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configuração da viewport para dispositivos móveis -->
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Links para os arquivos CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" /> <!-- Ícones do Font Awesome -->
+  <link rel="stylesheet" href="assets/css/pages/index/index.css"> <!-- Estilos CSS personalizados -->
 
-  <link rel="stylesheet" href="assets/css/pages/index/index.css">
+  <!-- Título da página -->
   <title>faça seu pedido</title>
 </head>
 
 <body>
 
   <main class="conteiner">
-
+    <!-- Seção principal do conteúdo -->
+    
+    <!-- Seção para resumo do pedido -->
     <section class="resumo">
       <div class="card-pedido">
-
+        <!-- Divisão para o card do pedido -->
+        
         <h1>resumo do pedido</h1>
-
+        <!-- Título do resumo do pedido -->
+        
         <div class="resumo-pedido">
+          <!-- Divisão para o resumo do pedido -->
           <div class="box-imag">
+            <!-- Divisão para a imagem do poke -->
             <img src="assets/files/imgs/resumo-pedido/img-poke.svg" alt="imagem do poke">
+            <!-- Imagem do poke -->
           </div>
 
           <div class="info-pedido">
+            <!-- Divisão para as informações do pedido -->
             <span class="span-tamanho">tamanho do poke</span>
+            <!-- Span para o tamanho do poke -->
             <span class="span-ingrediente">ingredientes do poke</span>
+            <!-- Span para os ingredientes do poke -->
             <span class="span-valor">valor do poke</span>
-
+            <!-- Span para o valor do poke -->
           </div>
         </div>
 
         <span class="linha"></span>
+        <!-- Linha de separação -->
 
         <div class="total">
+          <!-- Divisão para o total do pedido -->
           <p>sub-total:</p>
+          <!-- Parágrafo para o sub-total -->
           <span class="sub-total">valor do poke em R$</span>
+          <!-- Span para o valor do sub-total -->
 
           <p>entrega:</p>
+          <!-- Parágrafo para o valor da entrega -->
           <span class="entrega">R$ 5,00</span>
+          <!-- Span para o valor da entrega -->
 
           <p class="valor-final">total</p>
+          <!-- Parágrafo para o total -->
           <span class="valor-final">valor total</span>
+          <!-- Span para o valor total do pedido -->
         </div>
       </div>
 
-      <form class="form-entrega" action="#">
-
+      <!-- Formulário para finalizar o pedido -->
+      <form class="form-entrega" action="#" method="post">
         <h2>para finalizar:</h2>
+        <!-- Título para finalizar o pedido -->
+        
+        <!-- Divisão para os campos de entrada -->
         <div class="box-input">
-        <label for="nome">seu nome:</label>
-        <input type="text" id="nome" required>
-      </div>
+          <label for="nome">seu nome:</label>
+          <!-- Rótulo para o campo de nome -->
+          <input type="text" id="nome" required>
+          <!-- Campo de entrada para o nome -->
+        </div>
 
         <div class="box-input">
-        <label for="telefone">telefone:</label>
-        <input type="tel" id="telefone" required>
-      </div>
+          <label for="telefone">telefone:</label>
+          <!-- Rótulo para o campo de telefone -->
+          <input type="tel" id="telefone" required>
+          <!-- Campo de entrada para o telefone -->
+        </div>
 
         <div class="box-input">
           <label for="endereco">endereço para entrega:</label>
+          <!-- Rótulo para o campo de endereço -->
           <input type="text" id="endereco" required>
+          <!-- Campo de entrada para o endereço -->
         </div>
 
+        <!-- Divisão para os métodos de pagamento -->
         <div class="input-radio">
-          
           <input class="radio" type="radio" name="pagamento" id="pix" required>
+          <!-- Input para o método de pagamento pix -->
           <label for="pix">pix</label>
+          <!-- Rótulo para o método de pagamento pix -->
 
           <input class="radio" type="radio" name="pagamento" id="debito" required>
+          <!-- Input para o método de pagamento débito -->
           <label for="debito">débito</label>
+          <!-- Rótulo para o método de pagamento débito -->
 
           <input class="radio" type="radio" name="pagamento" id="credto" required>
+          <!-- Input para o método de pagamento crédito -->
           <label for="credito">crédito</label>
+          <!-- Rótulo para o método de pagamento crédito -->
         </div>
 
-        <button type="submit"> <i class="fa-solid fa-check"></i> </button>
+        <!-- Botão para finalizar o pedido -->
+        <button class="btn-finalizar" type="submit"> <i class="fa-solid fa-check"></i> </button>
+        <!-- Botão com ícone para finalizar o pedido -->
       </form>
     </section>
+
+    <!-- Seção para pedido aceito -->
+    <section class="pedido-aceito">
+      <div class="box-aceito">
+        <!-- Divisão para a caixa de pedido aceito -->
+        <p class="mensagem-aceito">pedido aceito!</p>
+        <!-- Mensagem de pedido aceito -->
+        
+        <i class="fa-solid fa-check"></i>
+        <!-- Ícone de check -->
+
+        <div class="agradecimento">
+          <!-- Divisão para agradecimento -->
+          <h1 id="suji">SUJIROKIMOHA</h1>
+          <!-- Título de agradecimento -->
+          <P>agradece a sua preferência.</P>
+          <!-- Parágrafo de agradecimento -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção para pedido enviado -->
+    <section class="pedido-enviado">
+      <div>
+        <!-- Divisão para mensagem de pedido enviado -->
+        <h1 id="nome-cliente"> Fulano, </h1>
+        <!-- Título com nome do cliente -->
+        <p>
+          seu pedido acabou<br>
+          de sair para entrega!</p>
+          <!-- Parágrafo de confirmação de envio do pedido -->
+      </div>
+
+      <!-- Imagem de entregador -->
+      <img src="assets/files/imgs/resumo-pedido/pedido-enviado/entregador.svg" alt="entregador">
+    </section>
   </main>
+
+  <script src="assets/js/ocultar-sessão.js"></script>
 </body>
 
 </html>

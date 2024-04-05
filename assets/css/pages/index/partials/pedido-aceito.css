@@ -1,0 +1,71 @@
+.pedido-aceito {
+  width: 100%;
+  height: 100dvh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  background: var(--primary-3);
+}
+
+
+.pedido-aceito .box-aceito {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  width: 60rem;
+  height: 50rem;
+
+  background: var(--primary-2);
+
+  border-radius: 5rem;
+}
+
+.pedido-aceito .box-aceito .mensagem-aceito {
+
+  font-size: clamp(1.2rem, 2dvw, 3rem);
+
+  color: var(--primary-1);
+}
+
+.pedido-aceito .box-aceito .fa-check {
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: clamp(3rem, 15dvw, 15rem);
+
+  color: var(--primary-3);
+
+  border-radius: 50%;
+  border: .8rem solid var(--primary-3);
+
+  width: 20rem;
+  height: 20rem;
+
+  margin: 3rem 0 0 0;
+}
+
+.pedido-aceito .box-aceito .agradecimento h1{
+
+  font-size: clamp(2.5rem, 5dvw, 5rem);
+
+  font-family: 'font-tema';
+
+  color: var(--primary-4);
+
+  margin: 1rem 0 1rem 0;
+}
+
+.pedido-aceito .box-aceito .agradecimento p {
+
+  font-size: clamp(1.5rem, 2dvw, 2rem);
+
+  color: var(--primary-4);
+
+}
